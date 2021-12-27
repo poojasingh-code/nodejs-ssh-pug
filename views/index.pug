@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    link(rel='stylesheet' href='/css/index.css')
+  body
+    h1= message
+    form#contactForm(method="get" action="/")
+      button#button(type="button", onclick="something()") dir command
+    div.pre-space
+     pre= paragraph  
+    script.
+     var something = function () {
+        document.querySelector("div.pre-space").style.display = 'block';}
+     
